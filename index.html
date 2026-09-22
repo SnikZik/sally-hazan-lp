@@ -5,6 +5,16 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light">
+<script>
+/* ---- tracking config: fill GTM container id, everything else is managed inside GTM ---- */
+window.NB_CONFIG = { gtm: 'GTM-XXXXXXX' };
+window.dataLayer = window.dataLayer || [];
+(function(w,d,s,l,i){ if(!i||/X{5}/.test(i)) return;
+  w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+  var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+  j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer',window.NB_CONFIG.gtm);
+</script>
 <title>התחלה חדשה לבנים</title>
 <meta name="description" content="ליווי אישי ודיסקרטי לבנים, גם מהציבור הדתי, עבורך ועבור המשפחה. שיחת היכרות בלי התחייבות.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -207,6 +217,7 @@ img{max-width:100%;display:block}
   <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></symbol>
 </svg>
 
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="page">
 
 <div class="topbar">
@@ -407,14 +418,25 @@ img{max-width:100%;display:block}
 
 <script>
 (function(){
+  function track(ev, extra){
+    var o={event:ev}; if(extra){for(var k in extra) o[k]=extra[k];}
+    window.dataLayer.push(o);
+  }
   document.querySelectorAll('.lead-form').forEach(function(f){
     f.addEventListener('submit',function(e){
       e.preventDefault();
       if(f.website.value) return;
       var name=f.name.value.trim(), phone=f.phone.value.trim(), email=f.email.value.trim();
       var text='שלום, אשמח לתיאום שיחת היכרות.\nשם: '+name+'\nטלפון: '+phone+(email?'\nמייל: '+email:'');
+      track('generate_lead',{lead_method:'whatsapp_form',form_id:f.id});
       window.open('https://wa.me/972559316956?text='+encodeURIComponent(text),'_blank','noopener');
     });
+  });
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
+    a.addEventListener('click',function(){ track('click_call',{link_id:a.id||''}); });
+  });
+  document.querySelectorAll('a[href*="wa.me"]').forEach(function(a){
+    a.addEventListener('click',function(){ track('click_whatsapp',{link_id:a.id||''}); });
   });
 })();
 </script>

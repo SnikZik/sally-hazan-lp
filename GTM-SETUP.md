@@ -1,5 +1,7 @@
 # Tracking setup for the landing page
 
+**Live URL (uPress, static files, no WordPress): https://newbeginning.ussl.co.il/** – files uploaded via uPress File Manager (index.html, images/, robots.txt Disallow all). GitHub Pages disabled 2026-09-22; the repo stays the source.
+
 **Live IDs (created 2026-09-22 under snir@snirdote.co.il):**
 - GTM container: `GTM-MPC98BFH` (account 6378284856 / container 264875867) – version 2 live
 - GA4: account 409046099, property 555387541 "newbeginning landing", stream 15825147542, Measurement ID `G-S4CTBM95T6`

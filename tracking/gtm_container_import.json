@@ -1,0 +1,227 @@
+{
+ "exportFormatVersion": 2,
+ "containerVersion": {
+  "accountId": "6378284856",
+  "containerId": "264875867",
+  "containerVersionId": "0",
+  "container": {
+   "accountId": "6378284856",
+   "containerId": "264875867",
+   "name": "newbeginning landing",
+   "publicId": "GTM-MPC98BFH",
+   "usageContext": [
+    "WEB"
+   ]
+  },
+  "tag": [
+   {
+    "accountId": "6378284856",
+    "containerId": "264875867",
+    "tagId": "1",
+    "name": "GA4 - Google Tag",
+    "type": "googtag",
+    "parameter": [
+     {
+      "type": "TEMPLATE",
+      "key": "tagId",
+      "value": "G-S4CTBM95T6"
+     }
+    ],
+    "firingTriggerId": [
+     "2147479553"
+    ],
+    "tagFiringOption": "ONCE_PER_EVENT"
+   },
+   {
+    "accountId": "6378284856",
+    "containerId": "264875867",
+    "tagId": "2",
+    "name": "Ads - Conversion Linker",
+    "type": "gclidw",
+    "parameter": [
+     {
+      "type": "BOOLEAN",
+      "key": "enableCrossDomain",
+      "value": "false"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "enableUrlPassthrough",
+      "value": "false"
+     }
+    ],
+    "firingTriggerId": [
+     "2147479553"
+    ],
+    "tagFiringOption": "ONCE_PER_EVENT"
+   },
+   {
+    "accountId": "6378284856",
+    "containerId": "264875867",
+    "tagId": "3",
+    "name": "GA4 - generate_lead",
+    "type": "gaawe",
+    "parameter": [
+     {
+      "type": "TEMPLATE",
+      "key": "eventName",
+      "value": "generate_lead"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "measurementIdOverride",
+      "value": "G-S4CTBM95T6"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "sendEcommerceData",
+      "value": "false"
+     }
+    ],
+    "firingTriggerId": [
+     "10"
+    ],
+    "tagFiringOption": "ONCE_PER_EVENT"
+   },
+   {
+    "accountId": "6378284856",
+    "containerId": "264875867",
+    "tagId": "4",
+    "name": "GA4 - click_call",
+    "type": "gaawe",
+    "parameter": [
+     {
+      "type": "TEMPLATE",
+      "key": "eventName",
+      "value": "click_call"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "measurementIdOverride",
+      "value": "G-S4CTBM95T6"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "sendEcommerceData",
+      "value": "false"
+     }
+    ],
+    "firingTriggerId": [
+     "11"
+    ],
+    "tagFiringOption": "ONCE_PER_EVENT"
+   },
+   {
+    "accountId": "6378284856",
+    "containerId": "264875867",
+    "tagId": "5",
+    "name": "GA4 - click_whatsapp",
+    "type": "gaawe",
+    "parameter": [
+     {
+      "type": "TEMPLATE",
+      "key": "eventName",
+      "value": "click_whatsapp"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "measurementIdOverride",
+      "value": "G-S4CTBM95T6"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "sendEcommerceData",
+      "value": "false"
+     }
+    ],
+    "firingTriggerId": [
+     "12"
+    ],
+    "tagFiringOption": "ONCE_PER_EVENT"
+   }
+  ],
+  "trigger": [
+   {
+    "accountId": "6378284856",
+    "containerId": "264875867",
+    "triggerId": "10",
+    "name": "CE - generate_lead",
+    "type": "CUSTOM_EVENT",
+    "customEventFilter": [
+     {
+      "type": "EQUALS",
+      "parameter": [
+       {
+        "type": "TEMPLATE",
+        "key": "arg0",
+        "value": "{{_event}}"
+       },
+       {
+        "type": "TEMPLATE",
+        "key": "arg1",
+        "value": "generate_lead"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "accountId": "6378284856",
+    "containerId": "264875867",
+    "triggerId": "11",
+    "name": "CE - click_call",
+    "type": "CUSTOM_EVENT",
+    "customEventFilter": [
+     {
+      "type": "EQUALS",
+      "parameter": [
+       {
+        "type": "TEMPLATE",
+        "key": "arg0",
+        "value": "{{_event}}"
+       },
+       {
+        "type": "TEMPLATE",
+        "key": "arg1",
+        "value": "click_call"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "accountId": "6378284856",
+    "containerId": "264875867",
+    "triggerId": "12",
+    "name": "CE - click_whatsapp",
+    "type": "CUSTOM_EVENT",
+    "customEventFilter": [
+     {
+      "type": "EQUALS",
+      "parameter": [
+       {
+        "type": "TEMPLATE",
+        "key": "arg0",
+        "value": "{{_event}}"
+       },
+       {
+        "type": "TEMPLATE",
+        "key": "arg1",
+        "value": "click_whatsapp"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "variable": [],
+  "builtInVariable": [
+   {
+    "accountId": "6378284856",
+    "containerId": "264875867",
+    "type": "EVENT",
+    "name": "Event"
+   }
+  ]
+ }
+}

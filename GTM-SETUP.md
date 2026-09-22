@@ -1,5 +1,11 @@
 # Tracking setup for the landing page
 
+**Live IDs (created 2026-09-22 under snir@snirdote.co.il):**
+- GTM container: `GTM-MPC98BFH` (account 6378284856 / container 264875867) – version 2 live
+- GA4: account 409046099, property 555387541 "newbeginning landing", stream 15825147542, Measurement ID `G-S4CTBM95T6`
+- Google Ads: **no account yet for התחלה חדשה** – conversion + remarketing tags pending
+- Import file for the GTM tags: `tracking/gtm_container_import.json`
+
 Page pushes these dataLayer events (see the script at the bottom of index.html):
 
 | event            | when                                  | params                          |
@@ -9,7 +15,7 @@ Page pushes these dataLayer events (see the script at the bottom of index.html):
 | click_whatsapp   | any wa.me link clicked                | link_id                         |
 
 ## 1. GTM container
-Replace `GTM-XXXXXXX` in index.html (2 places: NB_CONFIG and the noscript iframe).
+Done. `GTM-MPC98BFH` is in index.html (NB_CONFIG + noscript iframe).
 
 ## 2. Tags to create inside GTM
 1. **GA4 Configuration** – Measurement ID G-XXXXXXX, trigger: All Pages.

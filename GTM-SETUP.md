@@ -3,7 +3,11 @@
 **Live IDs (created 2026-09-22 under snir@snirdote.co.il):**
 - GTM container: `GTM-MPC98BFH` (account 6378284856 / container 264875867) – version 2 live
 - GA4: account 409046099, property 555387541 "newbeginning landing", stream 15825147542, Measurement ID `G-S4CTBM95T6`
-- Google Ads: **no account yet for התחלה חדשה** – conversion + remarketing tags pending
+- Google Ads: account "מורן" CID 311-885-1656 (Snir's choice, 2026-09-22). Conversion ID `AW-18402126771`
+  - NB - Lead form → label `_mjQCOztqYEdELPX6MZE` (event generate_lead)
+  - NB - Click to call → label `RR-OCO_tqYEdELPX6MZE` (event click_call)
+  - NB - WhatsApp click → label `a1ekCPLtqYEdELPX6MZE` (event click_whatsapp)
+  - Remarketing tag (all pages) + 3 conversion tags imported from `tracking/gtm_import_ads.json`
 - Import file for the GTM tags: `tracking/gtm_container_import.json`
 
 Page pushes these dataLayer events (see the script at the bottom of index.html):

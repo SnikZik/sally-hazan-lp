@@ -1,0 +1,257 @@
+{
+ "exportFormatVersion": 2,
+ "containerVersion": {
+  "accountId": "6378284856",
+  "containerId": "264875867",
+  "containerVersionId": "0",
+  "container": {
+   "accountId": "6378284856",
+   "containerId": "264875867",
+   "name": "newbeginning landing",
+   "publicId": "GTM-MPC98BFH",
+   "usageContext": [
+    "WEB"
+   ]
+  },
+  "tag": [
+   {
+    "accountId": "6378284856",
+    "containerId": "264875867",
+    "tagId": "20",
+    "name": "Ads - Remarketing",
+    "type": "sp",
+    "parameter": [
+     {
+      "type": "BOOLEAN",
+      "key": "enableConversionLinker",
+      "value": "true"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "conversionId",
+      "value": "18402126771"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "enableDynamicRemarketing",
+      "value": "false"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "rdp",
+      "value": "false"
+     }
+    ],
+    "firingTriggerId": [
+     "2147479553"
+    ],
+    "tagFiringOption": "ONCE_PER_EVENT"
+   },
+   {
+    "accountId": "6378284856",
+    "containerId": "264875867",
+    "tagId": "21",
+    "name": "Ads - Conv - Lead form",
+    "type": "awct",
+    "parameter": [
+     {
+      "type": "BOOLEAN",
+      "key": "enableConversionLinker",
+      "value": "true"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "conversionId",
+      "value": "18402126771"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "conversionLabel",
+      "value": "_mjQCOztqYEdELPX6MZE"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "rdp",
+      "value": "false"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "enableNewCustomerReporting",
+      "value": "false"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "enableEnhancedConversion",
+      "value": "false"
+     }
+    ],
+    "firingTriggerId": [
+     "10"
+    ],
+    "tagFiringOption": "ONCE_PER_EVENT"
+   },
+   {
+    "accountId": "6378284856",
+    "containerId": "264875867",
+    "tagId": "22",
+    "name": "Ads - Conv - Click to call",
+    "type": "awct",
+    "parameter": [
+     {
+      "type": "BOOLEAN",
+      "key": "enableConversionLinker",
+      "value": "true"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "conversionId",
+      "value": "18402126771"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "conversionLabel",
+      "value": "RR-OCO_tqYEdELPX6MZE"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "rdp",
+      "value": "false"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "enableNewCustomerReporting",
+      "value": "false"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "enableEnhancedConversion",
+      "value": "false"
+     }
+    ],
+    "firingTriggerId": [
+     "11"
+    ],
+    "tagFiringOption": "ONCE_PER_EVENT"
+   },
+   {
+    "accountId": "6378284856",
+    "containerId": "264875867",
+    "tagId": "23",
+    "name": "Ads - Conv - WhatsApp click",
+    "type": "awct",
+    "parameter": [
+     {
+      "type": "BOOLEAN",
+      "key": "enableConversionLinker",
+      "value": "true"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "conversionId",
+      "value": "18402126771"
+     },
+     {
+      "type": "TEMPLATE",
+      "key": "conversionLabel",
+      "value": "a1ekCPLtqYEdELPX6MZE"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "rdp",
+      "value": "false"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "enableNewCustomerReporting",
+      "value": "false"
+     },
+     {
+      "type": "BOOLEAN",
+      "key": "enableEnhancedConversion",
+      "value": "false"
+     }
+    ],
+    "firingTriggerId": [
+     "12"
+    ],
+    "tagFiringOption": "ONCE_PER_EVENT"
+   }
+  ],
+  "trigger": [
+   {
+    "accountId": "6378284856",
+    "containerId": "264875867",
+    "triggerId": "10",
+    "name": "CE - generate_lead",
+    "type": "CUSTOM_EVENT",
+    "customEventFilter": [
+     {
+      "type": "EQUALS",
+      "parameter": [
+       {
+        "type": "TEMPLATE",
+        "key": "arg0",
+        "value": "{{_event}}"
+       },
+       {
+        "type": "TEMPLATE",
+        "key": "arg1",
+        "value": "generate_lead"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "accountId": "6378284856",
+    "containerId": "264875867",
+    "triggerId": "11",
+    "name": "CE - click_call",
+    "type": "CUSTOM_EVENT",
+    "customEventFilter": [
+     {
+      "type": "EQUALS",
+      "parameter": [
+       {
+        "type": "TEMPLATE",
+        "key": "arg0",
+        "value": "{{_event}}"
+       },
+       {
+        "type": "TEMPLATE",
+        "key": "arg1",
+        "value": "click_call"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "accountId": "6378284856",
+    "containerId": "264875867",
+    "triggerId": "12",
+    "name": "CE - click_whatsapp",
+    "type": "CUSTOM_EVENT",
+    "customEventFilter": [
+     {
+      "type": "EQUALS",
+      "parameter": [
+       {
+        "type": "TEMPLATE",
+        "key": "arg0",
+        "value": "{{_event}}"
+       },
+       {
+        "type": "TEMPLATE",
+        "key": "arg1",
+        "value": "click_whatsapp"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "variable": [],
+  "builtInVariable": []
+ }
+}

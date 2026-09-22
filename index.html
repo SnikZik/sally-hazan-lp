@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light">
 <title>התחלה חדשה לבנים</title>
-<meta name="description" content="ליווי אישי ודיסקרטי לבנים מהציבור הדתי, עבורך ועבור המשפחה. שיחת היכרות בלי התחייבות.">
+<meta name="description" content="ליווי אישי ודיסקרטי לבנים, גם מהציבור הדתי, עבורך ועבור המשפחה. שיחת היכרות בלי התחייבות.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap">
@@ -100,18 +100,10 @@ img{max-width:100%;display:block}
 
 /* gallery / team */
 .gallery h2{margin-bottom:34px}
-.slider{max-width:1000px;margin-inline:auto;position:relative}
-.slider__main{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);background:var(--green-soft)}
-.slider__main img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .5s}
-.slider__main img.is-active{opacity:1}
-.slider__cap{position:absolute;bottom:0;inset-inline:0;padding:18px 22px;background:linear-gradient(0deg,rgba(15,46,68,.75),transparent);color:#fff;font-weight:500;font-size:19px}
-.slider__nav{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:0;background:rgba(255,255,255,.9);color:var(--navy);font-size:24px;cursor:pointer;display:grid;place-items:center;box-shadow:var(--shadow)}
-.slider__nav--prev{inset-inline-start:12px}
-.slider__nav--next{inset-inline-end:12px}
-.thumbs{display:flex;gap:8px;margin-top:10px;overflow-x:auto;padding-bottom:4px}
-.thumbs button{flex:none;width:96px;aspect-ratio:4/3;border:3px solid transparent;border-radius:6px;padding:0;overflow:hidden;cursor:pointer;background:none;opacity:.7}
-.thumbs button img{width:100%;height:100%;object-fit:cover}
-.thumbs button.is-active{border-color:var(--gold);opacity:1}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1000px;margin-inline:auto}
+.member{margin:0;background:#fff;border-radius:14px;box-shadow:0 2px 18px rgba(0,0,0,.09);overflow:hidden;text-align:center}
+.member img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;height:auto}
+.member figcaption{padding:14px 12px;font-weight:600;font-size:19px;color:var(--navy)}
 
 /* timeline */
 .timeline{position:relative;max-width:900px;margin:44px auto 0;padding-block:10px}
@@ -181,6 +173,7 @@ img{max-width:100%;display:block}
   .wcard--wide{grid-column:auto}
   .form__row{grid-template-columns:1fr}
   .fcards{grid-template-columns:1fr}
+  .team{grid-template-columns:1fr;max-width:360px}
   .timeline::before{inset-inline-start:18px;transform:none}
   .tl,.tl:nth-child(even){width:auto;margin-inline-start:52px}
   .tl::before,.tl:nth-child(odd)::before,.tl:nth-child(even)::before{inset-inline-start:auto;inset-inline-end:calc(100% + 18px);top:22px}
@@ -227,7 +220,7 @@ img{max-width:100%;display:block}
   <div class="container">
     <div class="hero__text">
       <h1>כשנדמה שאין אוויר, והכל מתפרק מבפנים, יש דרך חזרה, ויש מי שילווה אותך בה, צעד אחר צעד.</h1>
-      <p class="hero__sub">ליווי אישי ודיסקרטי לבנים מהציבור הדתי, עבורך ועבור המשפחה.</p>
+      <p class="hero__sub">ליווי אישי ודיסקרטי לבנים, גם מהציבור הדתי, עבורך ועבור המשפחה.</p>
       <div class="hero__actions">
         <a class="btn" href="#contact" id="hero-cta">לתיאום שיחת היכרות</a>
         <a class="btn btn--ghost" href="tel:+972559316956" id="hero-call"><svg class="ic"><use href="#i-phone"/></svg>055-931-6956</a>
@@ -247,7 +240,7 @@ img{max-width:100%;display:block}
     <svg class="title-deco" viewBox="0 0 70 10"><path d="M2 6 Q12 1 22 6 T42 6 T62 6"/></svg>
     <p class="why__sub">ליווי שנבנה סביבך וסביב המשפחה, מהצעד הראשון ועד החזרה לחיים מלאים.</p>
     <div class="why__grid">
-      <div class="wcard wcard--wide"><svg><use href="#i-sun"/></svg><p>בקרוב, מרכז יום לבנים בלבד לציבור הדתי. סביבה שמתאימה לאורח החיים ולערכי הבית. מוזמנים לשאול אותנו.</p></div>
+      <div class="wcard wcard--wide"><svg><use href="#i-sun"/></svg><p>מרכז יום לבנים בלבד, מותאם גם לציבור הדתי. סביבה שמכבדת את אורח החיים ואת ערכי הבית. מוזמנים לשאול אותנו.</p></div>
       <div class="wcard"><svg><use href="#i-shield"/></svg><p>סודיות מלאה. הפרטים נשארים בינינו בלבד.</p></div>
       <div class="wcard"><svg><use href="#i-message"/></svg><p>שיחת היכרות אישית, ללא שיפוט, להבנת המצב והצרכים.</p></div>
       <div class="wcard"><svg><use href="#i-route"/></svg><p>תוכנית פעולה מותאמת אישית, כולל התאמה למסגרת מתאימה בעת הצורך.</p></div>
@@ -284,20 +277,10 @@ img{max-width:100%;display:block}
 <section class="section gallery" id="team">
   <div class="container">
     <h2>מי מלווה אתכם ב<span class="gold">התחלה חדשה</span></h2>
-    <div class="slider" id="slider">
-      <div class="slider__main">
-        <img src="images/sally.jpg" alt="סאלי שלום חזן" class="is-active" data-cap="סאלי שלום חזן">
-        <img src="images/sharon.jpg" alt="שרון אלגרבלי" data-cap="שרון אלגרבלי">
-        <img src="images/shlomo.jpg" alt="שלמה משה" data-cap="שלמה משה">
-        <div class="slider__cap" id="slider-cap">סאלי שלום חזן</div>
-        <button class="slider__nav slider__nav--prev" type="button" id="slider-prev" aria-label="הקודם">‹</button>
-        <button class="slider__nav slider__nav--next" type="button" id="slider-next" aria-label="הבא">›</button>
-      </div>
-      <div class="thumbs" id="thumbs">
-        <button type="button" class="is-active" aria-label="סאלי שלום חזן"><img src="images/sally.jpg" alt=""></button>
-        <button type="button" aria-label="שרון אלגרבלי"><img src="images/sharon.jpg" alt=""></button>
-        <button type="button" aria-label="שלמה משה"><img src="images/shlomo.jpg" alt=""></button>
-      </div>
+    <div class="team">
+      <figure class="member"><img src="images/sally.jpg" alt="סאלי שלום חזן"><figcaption>סאלי שלום חזן</figcaption></figure>
+      <figure class="member"><img src="images/sharon.jpg" alt="שרון אלגרבלי"><figcaption>שרון אלגרבלי</figcaption></figure>
+      <figure class="member"><img src="images/shlomo.jpg" alt="שלמה משה"><figcaption>שלמה משה</figcaption></figure>
     </div>
   </div>
 </section>
@@ -401,8 +384,8 @@ img{max-width:100%;display:block}
 
 <section class="section soon">
   <div class="container">
-    <h2>בקרוב נפתח <strong>מרכז יום לבנים בלבד</strong> לציבור הדתי</h2>
-    <p>סביבה שקטה ומכבדת, מותאמת לאורח החיים הדתי, עם ליווי אישי לכל אחד. השאירו פרטים ונעדכן אתכם ראשונים.</p>
+    <h2><strong>מרכז יום לבנים בלבד</strong>, מותאם גם לציבור הדתי</h2>
+    <p>סביבה שקטה ומכבדת, מותאמת גם לאורח החיים הדתי, עם ליווי אישי לכל אחד. השאירו פרטים ונחזור אליכם.</p>
     <a class="btn" href="#contact-3" id="soon-cta">אני רוצה לשמוע עוד</a>
   </div>
 </section>
@@ -433,19 +416,6 @@ img{max-width:100%;display:block}
       window.open('https://wa.me/972559316956?text='+encodeURIComponent(text),'_blank','noopener');
     });
   });
-  var imgs=[].slice.call(document.querySelectorAll('#slider .slider__main img'));
-  var thumbs=[].slice.call(document.querySelectorAll('#thumbs button'));
-  var cap=document.getElementById('slider-cap'); var i=0;
-  function show(n){
-    i=(n+imgs.length)%imgs.length;
-    imgs.forEach(function(im,k){im.classList.toggle('is-active',k===i)});
-    thumbs.forEach(function(b,k){b.classList.toggle('is-active',k===i)});
-    cap.textContent=imgs[i].getAttribute('data-cap');
-  }
-  document.getElementById('slider-prev').addEventListener('click',function(){show(i-1)});
-  document.getElementById('slider-next').addEventListener('click',function(){show(i+1)});
-  thumbs.forEach(function(b,k){b.addEventListener('click',function(){show(k)})});
-  setInterval(function(){show(i+1)},6000);
 })();
 </script>
 

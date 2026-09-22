@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>התחלה חדשה לבנים</title>
+<meta name="description" content="ליווי אישי ודיסקרטי לבנים מהציבור הדתי, עבורך ועבור המשפחה. שיחת היכרות בלי התחייבות.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --navy:#18405A; --navy-dark:#0F2E44;
+  --gold:#C79A3C; --gold-soft:#F4D195;
+  --green-a:rgba(144,179,91,.41); --green-b:rgba(184,198,165,.41); --green-soft:#EFF5E7; --green-bar:#C9DDB6;
+  --wa:#25D366;
+  --text:#111; --muted:#4a5560; --line:#dfe6d5; --white:#fff;
+  --font:'Heebo','Assistant',system-ui,sans-serif;
+  --shadow:0 6px 24px rgba(24,64,90,.10);
+  --container:1200px;
+}
+*{box-sizing:border-box}
+body{margin:0;overflow-x:clip;background:var(--white);color:var(--text);font-family:var(--font);font-size:18px;line-height:1.6;direction:rtl;text-align:right}
+h1,h2,h3{font-family:var(--font);color:var(--navy);margin:0;line-height:1.25;text-wrap:balance}
+h1{font-size:clamp(34px,4.6vw,62px);font-weight:300}
+h2{font-size:clamp(30px,3.4vw,45px);font-weight:400;text-align:center}
+h3{font-size:22px;font-weight:700}
+p{margin:0}
+a{color:inherit}
+img{max-width:100%;display:block}
+.container{max-width:var(--container);margin-inline:auto;padding-inline:20px}
+.section{padding-block:clamp(48px,6vw,80px)}
+.gold{color:var(--gold)}
+.title-deco{display:block;width:70px;height:10px;margin:14px auto 0}
+.title-deco path{fill:none;stroke:var(--gold);stroke-width:3;stroke-linecap:round}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 30px;border-radius:7px;background:var(--navy);color:#fff;font-weight:500;font-size:17px;text-decoration:none;border:0;cursor:pointer;font-family:var(--font);transition:background .2s,transform .2s}
+.btn:hover{background:var(--navy-dark);transform:translateY(-1px)}
+.btn .ic{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+/* top bar */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--green-bar);border-bottom:1px solid rgba(24,64,90,.08)}
+.topbar .container{display:flex;align-items:center;justify-content:center;gap:22px;padding-block:9px;flex-wrap:wrap}
+.topbar__phone{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:500;color:var(--navy-dark);font-size:17px}
+.topbar__phone span{direction:ltr;font-variant-numeric:tabular-nums}
+.topbar__phone svg{width:17px;height:17px;stroke:var(--navy-dark);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.topbar .btn{padding:8px 22px;font-size:15px}
+
+/* hero */
+.hero{background:linear-gradient(180deg,var(--green-a) 0%,var(--green-b) 100%);}
+.hero .container{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;min-height:min(78vh,760px);padding-block:56px}
+.hero__text{padding-inline-start:10px}
+.hero__text h1{color:var(--navy)}
+.hero__sub{margin-top:22px;font-size:20px;color:var(--navy-dark);font-weight:300;max-width:34ch}
+.hero__actions{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
+.hero__actions .btn--ghost{background:transparent;color:var(--navy);border:2px solid var(--navy)}
+.hero__actions .btn--ghost:hover{background:var(--navy);color:#fff}
+.collage{position:relative;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:14px}
+.collage img{border-radius:14px;object-fit:cover;width:100%;height:100%;box-shadow:var(--shadow)}
+.collage__a{grid-column:2;aspect-ratio:4/3}
+.collage__b{grid-column:1/3;aspect-ratio:16/10}
+.collage__c{grid-column:1;grid-row:1;aspect-ratio:4/3}
+
+/* why */
+.why h2{margin-bottom:10px}
+.why__sub{text-align:center;color:var(--muted);max-width:60ch;margin:14px auto 0;font-size:18px}
+.why__grid{margin-top:44px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.wcard{background:#fff;border-radius:12px;box-shadow:0 2px 18px rgba(0,0,0,.09);padding:26px 18px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px;min-height:170px;justify-content:center}
+.wcard svg{width:38px;height:38px;stroke:var(--navy);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.wcard p{font-size:16px;line-height:1.5}
+.wcard--wide{grid-column:span 2;background:var(--green-soft)}
+.wcard--wide p{font-size:17px;font-weight:500;color:var(--navy-dark)}
+.wcard--wide svg{stroke:var(--gold)}
+
+/* form band */
+.band{position:relative;background:linear-gradient(180deg,var(--green-b) 0%,var(--green-soft) 100%);overflow:hidden}
+.band::before,.band::after{content:"";position:absolute;inset-inline:0;height:70px;background:#fff}
+.band::before{top:0;clip-path:polygon(0 0,100% 0,100% 30%,0 100%)}
+.band::after{bottom:0;clip-path:polygon(0 70%,100% 0,100% 100%,0 100%)}
+.band .container{position:relative;z-index:1;padding-block:96px;text-align:center}
+.band__icon{width:56px;height:56px;border-radius:12px;background:#fff;box-shadow:var(--shadow);display:grid;place-items:center;margin:0 auto 18px}
+.band__icon svg{width:26px;height:26px;stroke:var(--navy);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.band h2{font-size:clamp(24px,2.6vw,30px);font-weight:600}
+.band__sub{color:var(--navy);font-weight:300;font-size:19px;margin-top:6px}
+.badges{list-style:none;padding:0;margin:26px 0 0;display:flex;justify-content:center;gap:34px;flex-wrap:wrap}
+.badges li{display:inline-flex;align-items:center;gap:8px;font-weight:500;color:var(--navy-dark);font-size:17px}
+.badges svg{width:22px;height:22px;border-radius:50%;background:var(--gold);stroke:#fff;fill:none;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;padding:4px}
+.form{max-width:900px;margin:26px auto 0;display:grid;gap:14px}
+.form__row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+.form input[type=text],.form input[type=tel],.form input[type=email]{width:100%;height:46px;padding:0 16px;border:2px solid var(--navy);border-radius:6px;background:#fff;font:inherit;font-size:17px;color:var(--text);font-family:var(--font)}
+.form input:focus{outline:none;box-shadow:0 0 0 3px rgba(199,154,60,.25)}
+.form input::placeholder{color:#6b7680}
+.consent{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--muted);text-align:right;line-height:1.5;max-width:900px}
+.consent input{margin-top:4px;width:18px;height:18px;flex:none;accent-color:var(--navy)}
+.form .btn{justify-self:center;min-width:220px;margin-top:6px;font-size:18px;padding:13px 40px}
+.hp{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);opacity:0;pointer-events:none}
+
+/* gallery / team */
+.gallery h2{margin-bottom:34px}
+.slider{max-width:1000px;margin-inline:auto;position:relative}
+.slider__main{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);background:var(--green-soft)}
+.slider__main img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .5s}
+.slider__main img.is-active{opacity:1}
+.slider__cap{position:absolute;bottom:0;inset-inline:0;padding:18px 22px;background:linear-gradient(0deg,rgba(15,46,68,.75),transparent);color:#fff;font-weight:500;font-size:19px}
+.slider__nav{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:0;background:rgba(255,255,255,.9);color:var(--navy);font-size:24px;cursor:pointer;display:grid;place-items:center;box-shadow:var(--shadow)}
+.slider__nav--prev{inset-inline-start:12px}
+.slider__nav--next{inset-inline-end:12px}
+.thumbs{display:flex;gap:8px;margin-top:10px;overflow-x:auto;padding-bottom:4px}
+.thumbs button{flex:none;width:96px;aspect-ratio:4/3;border:3px solid transparent;border-radius:6px;padding:0;overflow:hidden;cursor:pointer;background:none;opacity:.7}
+.thumbs button img{width:100%;height:100%;object-fit:cover}
+.thumbs button.is-active{border-color:var(--gold);opacity:1}
+
+/* timeline */
+.timeline{position:relative;max-width:900px;margin:44px auto 0;padding-block:10px}
+.timeline::before{content:"";position:absolute;top:0;bottom:0;inset-inline-start:50%;width:3px;background:var(--gold);transform:translateX(50%)}
+.tl{position:relative;width:calc(50% - 40px);background:#fff;border-radius:12px;box-shadow:0 2px 18px rgba(0,0,0,.09);padding:22px 24px;margin-bottom:34px}
+.tl:nth-child(odd){margin-inline-start:0}
+.tl:nth-child(even){margin-inline-start:auto}
+.tl h3{margin-bottom:6px}
+.tl p{color:#333;font-size:16px}
+.tl::before{content:"";position:absolute;top:28px;width:34px;height:34px;border-radius:50%;background:var(--navy);border:4px solid var(--green-soft);box-shadow:0 0 0 2px var(--gold);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E");background-size:16px;background-repeat:no-repeat;background-position:center}
+.tl:nth-child(odd)::before{inset-inline-start:calc(100% + 23px)}
+.tl:nth-child(even)::before{inset-inline-end:calc(100% + 23px)}
+.tl::after{content:"";position:absolute;top:44px;width:40px;height:2px;background:var(--gold)}
+.tl:nth-child(odd)::after{inset-inline-start:100%}
+.tl:nth-child(even)::after{inset-inline-end:100%}
+
+/* family */
+.family{text-align:center}
+.family__lead{max-width:62ch;margin:18px auto 0;color:#222;font-size:18px}
+.family h3.sub{font-size:clamp(24px,2.6vw,34px);font-weight:600;color:var(--navy);margin-top:30px}
+.fcards{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1000px;margin-inline:auto}
+.fcard{background:#fff;border:1px solid var(--line);border-radius:12px;padding:26px 18px;display:flex;flex-direction:column;align-items:center;gap:10px}
+.fcard svg{width:36px;height:36px;stroke:var(--navy);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.fcard p{font-size:16px}
+
+/* about / quote */
+.about{background:var(--green-soft)}
+.about__grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-top:34px}
+.about__text p{color:#222;margin-top:12px}
+.about__list{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:10px}
+.about__list li{display:flex;gap:10px;align-items:center;font-weight:500;color:var(--navy-dark)}
+.about__list svg{width:22px;height:22px;border-radius:50%;background:var(--gold);stroke:#fff;fill:none;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;padding:4px;flex:none}
+.quote{background:#fff;border-radius:14px;box-shadow:var(--shadow);padding:34px 30px;position:relative}
+.quote__mark{font-size:80px;line-height:.5;color:var(--gold);margin-bottom:20px;font-weight:700}
+.quote__text{font-size:20px;line-height:1.6;color:var(--navy-dark);font-weight:300}
+.quote__who{margin-top:18px;font-weight:500;color:var(--gold)}
+
+/* soon */
+.soon{background:var(--navy-dark);color:#fff;text-align:center}
+.soon h2{color:#fff;font-weight:300}
+.soon h2 strong{font-weight:500;color:var(--gold-soft)}
+.soon p{margin:14px auto 0;max-width:56ch;color:rgba(255,255,255,.85)}
+.soon .btn{margin-top:24px;background:var(--gold-soft);color:var(--navy-dark)}
+.soon .btn:hover{background:#fff}
+
+/* footer */
+.footer{background:var(--green-bar);padding-block:28px 110px;text-align:center;font-size:14px;color:var(--navy-dark)}
+.footer p+p{margin-top:6px}
+.footer .disc{color:#3b4a55;font-size:13px}
+
+/* floats */
+.floats{position:fixed;bottom:calc(20px + env(safe-area-inset-bottom,0px));inset-inline-end:auto;left:18px;z-index:40;display:flex;flex-direction:column;gap:10px}
+.floats a{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.25);color:#fff}
+.floats a svg{width:24px;height:24px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.floats .f-wa{background:var(--wa)}
+.floats .f-tel{background:var(--navy)}
+
+@media (max-width:980px){
+  .hero .container{grid-template-columns:1fr;min-height:0;gap:30px}
+  .collage{max-width:560px}
+  .why__grid{grid-template-columns:1fr 1fr}
+  .about__grid{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  body{font-size:17px}
+  .why__grid{grid-template-columns:1fr}
+  .wcard--wide{grid-column:auto}
+  .form__row{grid-template-columns:1fr}
+  .fcards{grid-template-columns:1fr}
+  .timeline::before{inset-inline-start:18px;transform:none}
+  .tl,.tl:nth-child(even){width:auto;margin-inline-start:52px}
+  .tl::before,.tl:nth-child(odd)::before,.tl:nth-child(even)::before{inset-inline-start:auto;inset-inline-end:calc(100% + 18px);top:22px}
+  .tl::after{display:none}
+  .badges{gap:14px 22px}
+  .band .container{padding-block:70px}
+  .topbar .container{gap:10px}
+  h2{font-size:28px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M3 21l1.6-4.7A9 9 0 1 1 8 19.5z"/><path d="M9 9.5c.3 2.5 2.7 4.9 5.3 5.3l1.2-1.2-1.7-1-1 .7a5 5 0 0 1-2.3-2.3l.7-1-1-1.7z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-3.5 8-10V5l-8-3-8 3v7c0 6.5 8 10 8 10z"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="3"/><circle cx="18" cy="5" r="3"/><path d="M9 19h6a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10l9-7 9 7v10a2 2 0 0 1-2 2h-4v-7h-6v7H5a2 2 0 0 1-2-2z"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4z"/><path d="M8 2v16M16 6v16"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 24 24"><path d="M18 11V6a2 2 0 0 0-4 0v5M14 10V4a2 2 0 0 0-4 0v6M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 0 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.9-5.8-2.4L3.2 15.5a2 2 0 0 1 3-2.6L8 15"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M8 10h8M8 14h5"/><path d="M21 12a8.5 8.5 0 0 1-12.4 7.5L3 21l1.5-5.6A8.5 8.5 0 1 1 21 12z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></symbol>
+</svg>
+
+<div class="page">
+
+<div class="topbar">
+  <div class="container">
+    <a class="topbar__phone" href="tel:+972559316956" id="top-phone"><svg><use href="#i-phone"/></svg><span>055-931-6956</span></a>
+    <a class="btn" href="#contact" id="top-cta">התקשרו לשיחת היכרות</a>
+  </div>
+</div>
+
+<section class="hero" id="top">
+  <div class="container">
+    <div class="hero__text">
+      <h1>כשנדמה שאין אוויר, והכל מתפרק מבפנים, יש דרך חזרה, ויש מי שילווה אותך בה, צעד אחר צעד.</h1>
+      <p class="hero__sub">ליווי אישי ודיסקרטי לבנים מהציבור הדתי, עבורך ועבור המשפחה.</p>
+      <div class="hero__actions">
+        <a class="btn" href="#contact" id="hero-cta">לתיאום שיחת היכרות</a>
+        <a class="btn btn--ghost" href="tel:+972559316956" id="hero-call"><svg class="ic"><use href="#i-phone"/></svg>055-931-6956</a>
+      </div>
+    </div>
+    <div class="collage">
+      <img class="collage__c" src="images/hero2.jpg" alt="שביל ביער באור בוקר">
+      <img class="collage__a" src="images/sally.jpg" alt="סאלי שלום חזן">
+      <img class="collage__b" src="images/hero3.jpg" alt="הרי ירושלים בזריחה">
+    </div>
+  </div>
+</section>
+
+<section class="section why" id="why">
+  <div class="container">
+    <h2>למה לבחור ב<span class="gold">התחלה חדשה</span> ועל הדרך שלנו.</h2>
+    <svg class="title-deco" viewBox="0 0 70 10"><path d="M2 6 Q12 1 22 6 T42 6 T62 6"/></svg>
+    <p class="why__sub">ליווי שנבנה סביבך וסביב המשפחה, מהצעד הראשון ועד החזרה לחיים מלאים.</p>
+    <div class="why__grid">
+      <div class="wcard wcard--wide"><svg><use href="#i-sun"/></svg><p>בקרוב, מרכז יום לבנים בלבד לציבור הדתי. סביבה שמתאימה לאורח החיים ולערכי הבית. מוזמנים לשאול אותנו.</p></div>
+      <div class="wcard"><svg><use href="#i-shield"/></svg><p>סודיות מלאה. הפרטים נשארים בינינו בלבד.</p></div>
+      <div class="wcard"><svg><use href="#i-message"/></svg><p>שיחת היכרות אישית, ללא שיפוט, להבנת המצב והצרכים.</p></div>
+      <div class="wcard"><svg><use href="#i-route"/></svg><p>תוכנית פעולה מותאמת אישית, כולל התאמה למסגרת מתאימה בעת הצורך.</p></div>
+      <div class="wcard"><svg><use href="#i-link"/></svg><p>חיבור למטפלים ולאנשי מקצוע בכל הארץ.</p></div>
+      <div class="wcard"><svg><use href="#i-users"/></svg><p>ליווי והדרכה למשפחה לאורך כל התהליך, וגם אחריו.</p></div>
+      <div class="wcard"><svg><use href="#i-clock"/></svg><p>ליווי שבועי וזמינות לשאלות ולמצבי משבר.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="contact">
+  <div class="container">
+    <div class="band__icon"><svg><use href="#i-chat"/></svg></div>
+    <h2>שיחת היכרות דיסקרטית, בלי התחייבות.</h2>
+    <p class="band__sub">לשמוע, להבין, לבחור.</p>
+    <ul class="badges">
+      <li><svg><use href="#i-check"/></svg>דיסקרטיות מלאה</li>
+      <li><svg><use href="#i-check"/></svg>מענה אנושי</li>
+      <li><svg><use href="#i-check"/></svg>בנים בלבד</li>
+    </ul>
+    <form class="form lead-form" id="lead-form-1" method="post" action="#">
+      <div class="form__row">
+        <input type="text" name="name" id="f1-name" placeholder="שם מלא:" required autocomplete="name">
+        <input type="email" name="email" id="f1-email" placeholder="מייל:" autocomplete="email">
+        <input type="tel" name="phone" id="f1-phone" placeholder="טלפון:" required autocomplete="tel" inputmode="tel">
+      </div>
+      <label class="consent" for="f1-consent"><input type="checkbox" name="consent" id="f1-consent">אני מאשר/ת קבלת עדכונים מהתחלה חדשה במייל ובוואטסאפ. אפשר להסיר את ההרשמה בכל עת.</label>
+      <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn" type="submit" id="f1-submit">לתיאום שיחה</button>
+    </form>
+  </div>
+</section>
+
+<section class="section gallery" id="team">
+  <div class="container">
+    <h2>מי מלווה אתכם ב<span class="gold">התחלה חדשה</span></h2>
+    <div class="slider" id="slider">
+      <div class="slider__main">
+        <img src="images/sally.jpg" alt="סאלי שלום חזן" class="is-active" data-cap="סאלי שלום חזן">
+        <img src="images/sharon.jpg" alt="שרון אלגרבלי" data-cap="שרון אלגרבלי">
+        <img src="images/shlomo.jpg" alt="שלמה משה" data-cap="שלמה משה">
+        <img src="images/hero1.jpg" alt="שביל בהרים בזריחה" data-cap="הדרך מתחילה בצעד אחד">
+        <div class="slider__cap" id="slider-cap">סאלי שלום חזן</div>
+        <button class="slider__nav slider__nav--prev" type="button" id="slider-prev" aria-label="הקודם">‹</button>
+        <button class="slider__nav slider__nav--next" type="button" id="slider-next" aria-label="הבא">›</button>
+      </div>
+      <div class="thumbs" id="thumbs">
+        <button type="button" class="is-active" aria-label="סאלי שלום חזן"><img src="images/sally.jpg" alt=""></button>
+        <button type="button" aria-label="שרון אלגרבלי"><img src="images/sharon.jpg" alt=""></button>
+        <button type="button" aria-label="שלמה משה"><img src="images/shlomo.jpg" alt=""></button>
+        <button type="button" aria-label="שביל בהרים"><img src="images/hero1.jpg" alt=""></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="contact-2">
+  <div class="container">
+    <div class="band__icon"><svg><use href="#i-hand"/></svg></div>
+    <h2>אם זה מדבר אליכם, זה בדיוק הזמן להשאיר פרטים.</h2>
+    <p class="band__sub">נענה בהקדם, באמפתיה מלאה ובשיחה אנושית.</p>
+    <ul class="badges">
+      <li><svg><use href="#i-check"/></svg>דיסקרטיות מלאה</li>
+      <li><svg><use href="#i-check"/></svg>מענה אנושי</li>
+      <li><svg><use href="#i-check"/></svg>בנים בלבד</li>
+    </ul>
+    <form class="form lead-form" id="lead-form-2" method="post" action="#">
+      <div class="form__row">
+        <input type="text" name="name" id="f2-name" placeholder="שם מלא:" required autocomplete="name">
+        <input type="email" name="email" id="f2-email" placeholder="מייל:" autocomplete="email">
+        <input type="tel" name="phone" id="f2-phone" placeholder="טלפון:" required autocomplete="tel" inputmode="tel">
+      </div>
+      <label class="consent" for="f2-consent"><input type="checkbox" name="consent" id="f2-consent">אני מאשר/ת קבלת עדכונים מהתחלה חדשה במייל ובוואטסאפ. אפשר להסיר את ההרשמה בכל עת.</label>
+      <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn" type="submit" id="f2-submit">לתיאום שיחה</button>
+    </form>
+  </div>
+</section>
+
+<section class="section" id="process">
+  <div class="container">
+    <h2>מה קורה אצלנו, שלב אחר שלב</h2>
+    <svg class="title-deco" viewBox="0 0 70 10"><path d="M2 6 Q12 1 22 6 T42 6 T62 6"/></svg>
+    <div class="timeline">
+      <div class="tl"><h3>היכרות ראשונית</h3><p>פנייה ראשונה, בטלפון או בהודעה. אנחנו מקשיבים, בלי התחייבות ובלי שיפוט.</p></div>
+      <div class="tl"><h3>אפיון ובניית תהליך מותאם</h3><p>שיחת היכרות אישית, הבנת המצב והצרכים, והתאמה אישית של מסלול ואנשי מקצוע.</p></div>
+      <div class="tl"><h3>ליווי בתמיכה מלאה</h3><p>ליווי שבועי, חיבור למסגרת מתאימה בעת הצורך, וזמינות במצבי משבר.</p></div>
+      <div class="tl"><h3>מעבר לחיים מחוץ למסגרת</h3><p>שמירה על קשר גם אחרי היציאה מהמסגרת, תמיכה לפי הצורך, וליווי למשפחה לאורך כל הדרך.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section family" id="family">
+  <div class="container">
+    <h2>ליווי למשפחות</h2>
+    <svg class="title-deco" viewBox="0 0 70 10"><path d="M2 6 Q12 1 22 6 T42 6 T62 6"/></svg>
+    <p class="family__lead">אנחנו מאמינים שליווי מוצלח כולל גם את בני המשפחה. בני משפחה רבים סוחבים איתם תחושת חוסר אונים, עייפות נפשית, כעסים ואשמה, ולא יודעים למי אפשר לפנות בלי שכל הקהילה תדע.</p>
+    <h3 class="sub">ולכן, בהתחלה חדשה תמצאו:</h3>
+    <div class="fcards">
+      <div class="fcard"><svg><use href="#i-users"/></svg><p>קבוצות שיח והכוונה ייעודיות לבני המשפחה</p></div>
+      <div class="fcard"><svg><use href="#i-heart"/></svg><p>כלים לתקשורת תומכת ובריאה בבית</p></div>
+      <div class="fcard"><svg><use href="#i-map"/></svg><p>המשכיות גם לאחר שהיקרים שלכם יוצאים מהמסגרת</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <div class="container">
+    <h2>כמה מילים עלינו</h2>
+    <svg class="title-deco" viewBox="0 0 70 10"><path d="M2 6 Q12 1 22 6 T42 6 T62 6"/></svg>
+    <div class="about__grid">
+      <div class="about__text">
+        <h3>ליווי שמתחיל באמון, בהקשבה ובהבנה</h3>
+        <p>תקופה קשה בחיים היא תהליך מורכב, עבורך וגם עבור בני המשפחה. אנחנו מציעים ליווי אישי, דיסקרטי וללא שיפוטיות, מתוך מטרה לעשות סדר, להבין את האפשרויות ולבנות דרך שמתאימה למצב האישי שלכם.</p>
+        <ul class="about__list">
+          <li><svg><use href="#i-check"/></svg>ליווי אישי המותאם לצרכים ולמצב הקיים</li>
+          <li><svg><use href="#i-check"/></svg>גישה רגישה, מכבדת ודיסקרטית</li>
+          <li><svg><use href="#i-check"/></svg>תמיכה והכוונה גם לבני המשפחה</li>
+          <li><svg><use href="#i-check"/></svg>אנונימיות מוחלטת</li>
+        </ul>
+      </div>
+      <div class="quote">
+        <div class="quote__mark">”</div>
+        <p class="quote__text">מהרגע הראשון הרגשנו שאנחנו לא לבד. קיבלנו הכוונה ברורה, ליווי אישי ורגיש, וסיוע בבחירת הדרך המתאימה עבורנו. לאורך כל התהליך היה לנו למי לפנות, גם ברגעים המורכבים ביותר.</p>
+        <p class="quote__who">א׳ · בן משפחה</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="contact-3">
+  <div class="container">
+    <div class="band__icon"><svg><use href="#i-star"/></svg></div>
+    <h2>רוצים לבחון התחלה אחרת?</h2>
+    <p class="band__sub">בואו נדבר. שיחה קצרה יכולה לפתוח דלת שלא הכרתם.</p>
+    <ul class="badges">
+      <li><svg><use href="#i-check"/></svg>דיסקרטיות מלאה</li>
+      <li><svg><use href="#i-check"/></svg>מענה אנושי</li>
+      <li><svg><use href="#i-check"/></svg>בנים בלבד</li>
+    </ul>
+    <form class="form lead-form" id="lead-form-3" method="post" action="#">
+      <div class="form__row">
+        <input type="text" name="name" id="f3-name" placeholder="שם מלא:" required autocomplete="name">
+        <input type="email" name="email" id="f3-email" placeholder="מייל:" autocomplete="email">
+        <input type="tel" name="phone" id="f3-phone" placeholder="טלפון:" required autocomplete="tel" inputmode="tel">
+      </div>
+      <label class="consent" for="f3-consent"><input type="checkbox" name="consent" id="f3-consent">אני מאשר/ת קבלת עדכונים מהתחלה חדשה במייל ובוואטסאפ. אפשר להסיר את ההרשמה בכל עת.</label>
+      <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn" type="submit" id="f3-submit">לתיאום שיחה</button>
+    </form>
+  </div>
+</section>
+
+<section class="section soon">
+  <div class="container">
+    <h2>בקרוב נפתח <strong>מרכז יום לבנים בלבד</strong> לציבור הדתי</h2>
+    <p>סביבה שקטה ומכבדת, מותאמת לאורח החיים הדתי, עם ליווי אישי לכל אחד. השאירו פרטים ונעדכן אתכם ראשונים.</p>
+    <a class="btn" href="#contact-3" id="soon-cta">אני רוצה לשמוע עוד</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p><strong>התחלה חדשה</strong> · ליווי אישי לבנים ולמשפחות · 055-931-6956</p>
+    <p>זמינות בהתאם לתיאום מראש · <a href="https://www.newbeginning.co.il/" target="_blank" rel="noopener">מדיניות פרטיות</a></p>
+    <p class="disc">© 2026 התחלה חדשה. האתר אינו מהווה תחליף לטיפול רפואי או נפשי. במצב חירום פנו למד״א 101 או לעֶרֶן 1201.</p>
+  </div>
+</footer>
+
+<div class="floats">
+  <a class="f-wa" href="https://wa.me/972559316956" target="_blank" rel="noopener" id="fl-wa" aria-label="וואטסאפ"><svg><use href="#i-wa"/></svg></a>
+  <a class="f-tel" href="tel:+972559316956" id="fl-tel" aria-label="התקשרו"><svg><use href="#i-phone"/></svg></a>
+</div>
+
+</div>
+
+<script>
+(function(){
+  document.querySelectorAll('.lead-form').forEach(function(f){
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      if(f.website.value) return;
+      var name=f.name.value.trim(), phone=f.phone.value.trim(), email=f.email.value.trim();
+      var text='שלום, אשמח לתיאום שיחת היכרות.\nשם: '+name+'\nטלפון: '+phone+(email?'\nמייל: '+email:'');
+      window.open('https://wa.me/972559316956?text='+encodeURIComponent(text),'_blank','noopener');
+    });
+  });
+  var imgs=[].slice.call(document.querySelectorAll('#slider .slider__main img'));
+  var thumbs=[].slice.call(document.querySelectorAll('#thumbs button'));
+  var cap=document.getElementById('slider-cap'); var i=0;
+  function show(n){
+    i=(n+imgs.length)%imgs.length;
+    imgs.forEach(function(im,k){im.classList.toggle('is-active',k===i)});
+    thumbs.forEach(function(b,k){b.classList.toggle('is-active',k===i)});
+    cap.textContent=imgs[i].getAttribute('data-cap');
+  }
+  document.getElementById('slider-prev').addEventListener('click',function(){show(i-1)});
+  document.getElementById('slider-next').addEventListener('click',function(){show(i+1)});
+  thumbs.forEach(function(b,k){b.addEventListener('click',function(){show(k)})});
+  setInterval(function(){show(i+1)},6000);
+})();
+</script>
+
+</body></html>

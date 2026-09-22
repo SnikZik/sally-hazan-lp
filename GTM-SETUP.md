@@ -7,7 +7,8 @@
   - NB - Lead form → label `_mjQCOztqYEdELPX6MZE` (event generate_lead)
   - NB - Click to call → label `RR-OCO_tqYEdELPX6MZE` (event click_call)
   - NB - WhatsApp click → label `a1ekCPLtqYEdELPX6MZE` (event click_whatsapp)
-  - Remarketing tag (all pages) + 3 conversion tags imported from `tracking/gtm_import_ads.json`
+  - Remarketing tag (all pages) + 3 conversion tags imported from `tracking/gtm_import_ads.json` – GTM version 3 live
+  - Audience segment: "NB - מבקרי דף הנחיתה 540 יום" (page URL contains sally-hazan-lp, 540 days) in Audience manager
 - Import file for the GTM tags: `tracking/gtm_container_import.json`
 
 Page pushes these dataLayer events (see the script at the bottom of index.html):
